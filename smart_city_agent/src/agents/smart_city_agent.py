@@ -6,6 +6,7 @@ user queries about cities (weather, time, etc.).
 """
 
 from google.adk.agents import Agent
+from google.adk.workflow import RetryConfig
 
 from ..tools.weather import get_weather
 from ..tools.time import get_time
@@ -54,6 +55,14 @@ def create_smart_city_agent() -> Agent:
             "Be friendly, concise, and accurate in your responses."
         ),
         tools=[get_weather, get_time],
+        # Groq's llama-3.3-70b-versatile occasionally emits a malformed
+        # tool-call (e.g. "<function=...>") that Groq's API rejects with a
+        # 400 tool_use_failed. This is non-deterministic model behavior, so
+        # retrying the call is the practical mitigation.
+        retry_config=RetryConfig(
+            max_attempts=3,
+            exceptions=["BadRequestError"],
+        ),
     )
 
     logger.info(f"Agent created: {agent.name} with {len(agent.tools)} tools")

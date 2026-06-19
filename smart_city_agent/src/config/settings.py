@@ -40,10 +40,6 @@ class Settings(BaseSettings):
         default="https://cloud.langfuse.com", description="Langfuse Server URL"
     )
     enable_langfuse: bool = Field(default=False, description="Enable Langfuse Tracing")
-    langfuse_host: str = Field(
-        default="https://cloud/langfuse.com", description="Langfuse Server URL"
-    )
-    enable_langfuse: bool = Field(default=False, description="Enable Langfuse Tracing")
 
     @field_validator("groq_api_key")
     @classmethod
