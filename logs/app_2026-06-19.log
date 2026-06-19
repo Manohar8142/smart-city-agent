@@ -1,0 +1,22 @@
+2026-06-19 16:03:51 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:29 - Creating Smart City Agent
+2026-06-19 16:03:51 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:51 - Agent created: smart_city_agent with 2 tools
+2026-06-19 16:03:51 | INFO     | src.main:<module>:18 - ============================================================
+2026-06-19 16:03:51 | INFO     | src.main:<module>:19 - Smart City Agent Starting
+2026-06-19 16:03:51 | INFO     | src.main:<module>:20 - ============================================================
+2026-06-19 16:03:51 | INFO     | src.main:<module>:21 - Environment: development
+2026-06-19 16:03:51 | INFO     | src.main:<module>:22 - Model: groq/llama-3.3-70b-versatile
+2026-06-19 16:03:51 | INFO     | src.main:<module>:23 - Log Level: DEBUG
+2026-06-19 16:03:51 | INFO     | src.main:<module>:24 - Langfuse Enabled: True
+2026-06-19 16:03:51 | INFO     | src.main:<module>:25 - ============================================================
+2026-06-19 16:03:57 | INFO     | src.tools.weather:get_weather:71 - Returning weather data for New York
+2026-06-19 16:04:09 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:29 - Creating Smart City Agent
+2026-06-19 16:04:09 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:51 - Agent created: smart_city_agent with 2 tools
+2026-06-19 16:04:09 | INFO     | src.main:<module>:18 - ============================================================
+2026-06-19 16:04:09 | INFO     | src.main:<module>:19 - Smart City Agent Starting
+2026-06-19 16:04:09 | INFO     | src.main:<module>:20 - ============================================================
+2026-06-19 16:04:09 | INFO     | src.main:<module>:21 - Environment: development
+2026-06-19 16:04:09 | INFO     | src.main:<module>:22 - Model: groq/llama-3.3-70b-versatile
+2026-06-19 16:04:09 | INFO     | src.main:<module>:23 - Log Level: DEBUG
+2026-06-19 16:04:09 | INFO     | src.main:<module>:24 - Langfuse Enabled: True
+2026-06-19 16:04:09 | INFO     | src.main:<module>:25 - ============================================================
+2026-06-19 16:04:15 | INFO     | src.tools.time:get_time:101 - Successfully retrieved time for Tokyo

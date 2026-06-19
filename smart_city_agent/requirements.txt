@@ -14,7 +14,12 @@ aiohttp>=3.9.0
 
 # Observability (Phase 3)
 langfuse>=2.0.0
+loguru>=0.7.0
 
+pydantic>=2.10.0
+pydantic-settings>=2.10.0
+
+tenacity>=8.2.0
 # MCP (Phase 2)
 # mcp-client>=0.1.0  # Uncomment when ready
 
