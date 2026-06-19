@@ -20,3 +20,65 @@
 2026-06-19 16:04:09 | INFO     | src.main:<module>:24 - Langfuse Enabled: True
 2026-06-19 16:04:09 | INFO     | src.main:<module>:25 - ============================================================
 2026-06-19 16:04:15 | INFO     | src.tools.time:get_time:101 - Successfully retrieved time for Tokyo
+2026-06-19 16:12:11 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:29 - Creating Smart City Agent
+2026-06-19 16:12:11 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:51 - Agent created: smart_city_agent with 2 tools
+2026-06-19 16:12:11 | INFO     | src.main:<module>:18 - ============================================================
+2026-06-19 16:12:11 | INFO     | src.main:<module>:19 - Smart City Agent Starting
+2026-06-19 16:12:11 | INFO     | src.main:<module>:20 - ============================================================
+2026-06-19 16:12:11 | INFO     | src.main:<module>:21 - Environment: development
+2026-06-19 16:12:11 | INFO     | src.main:<module>:22 - Model: groq/llama-3.3-70b-versatile
+2026-06-19 16:12:11 | INFO     | src.main:<module>:23 - Log Level: DEBUG
+2026-06-19 16:12:11 | INFO     | src.main:<module>:24 - Langfuse Enabled: True
+2026-06-19 16:12:11 | INFO     | src.main:<module>:25 - ============================================================
+2026-06-19 16:12:17 | INFO     | src.tools.time:get_time:174 - Successfully retrieved time for Berlin
+2026-06-19 16:12:28 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:29 - Creating Smart City Agent
+2026-06-19 16:12:28 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:51 - Agent created: smart_city_agent with 2 tools
+2026-06-19 16:12:28 | INFO     | src.main:<module>:18 - ============================================================
+2026-06-19 16:12:28 | INFO     | src.main:<module>:19 - Smart City Agent Starting
+2026-06-19 16:12:28 | INFO     | src.main:<module>:20 - ============================================================
+2026-06-19 16:12:28 | INFO     | src.main:<module>:21 - Environment: development
+2026-06-19 16:12:28 | INFO     | src.main:<module>:22 - Model: groq/llama-3.3-70b-versatile
+2026-06-19 16:12:28 | INFO     | src.main:<module>:23 - Log Level: DEBUG
+2026-06-19 16:12:28 | INFO     | src.main:<module>:24 - Langfuse Enabled: True
+2026-06-19 16:12:28 | INFO     | src.main:<module>:25 - ============================================================
+2026-06-19 16:12:44 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:29 - Creating Smart City Agent
+2026-06-19 16:12:44 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:51 - Agent created: smart_city_agent with 2 tools
+2026-06-19 16:12:44 | INFO     | src.main:<module>:18 - ============================================================
+2026-06-19 16:12:44 | INFO     | src.main:<module>:19 - Smart City Agent Starting
+2026-06-19 16:12:44 | INFO     | src.main:<module>:20 - ============================================================
+2026-06-19 16:12:44 | INFO     | src.main:<module>:21 - Environment: development
+2026-06-19 16:12:44 | INFO     | src.main:<module>:22 - Model: groq/llama-3.3-70b-versatile
+2026-06-19 16:12:44 | INFO     | src.main:<module>:23 - Log Level: DEBUG
+2026-06-19 16:12:44 | INFO     | src.main:<module>:24 - Langfuse Enabled: True
+2026-06-19 16:12:44 | INFO     | src.main:<module>:25 - ============================================================
+2026-06-19 16:13:17 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:29 - Creating Smart City Agent
+2026-06-19 16:13:17 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:51 - Agent created: smart_city_agent with 2 tools
+2026-06-19 16:13:17 | INFO     | src.main:<module>:18 - ============================================================
+2026-06-19 16:13:17 | INFO     | src.main:<module>:19 - Smart City Agent Starting
+2026-06-19 16:13:17 | INFO     | src.main:<module>:20 - ============================================================
+2026-06-19 16:13:17 | INFO     | src.main:<module>:21 - Environment: development
+2026-06-19 16:13:17 | INFO     | src.main:<module>:22 - Model: groq/llama-3.3-70b-versatile
+2026-06-19 16:13:17 | INFO     | src.main:<module>:23 - Log Level: DEBUG
+2026-06-19 16:13:17 | INFO     | src.main:<module>:24 - Langfuse Enabled: True
+2026-06-19 16:13:17 | INFO     | src.main:<module>:25 - ============================================================
+2026-06-19 16:13:34 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:29 - Creating Smart City Agent
+2026-06-19 16:13:34 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:51 - Agent created: smart_city_agent with 2 tools
+2026-06-19 16:13:34 | INFO     | src.main:<module>:18 - ============================================================
+2026-06-19 16:13:34 | INFO     | src.main:<module>:19 - Smart City Agent Starting
+2026-06-19 16:13:34 | INFO     | src.main:<module>:20 - ============================================================
+2026-06-19 16:13:34 | INFO     | src.main:<module>:21 - Environment: development
+2026-06-19 16:13:34 | INFO     | src.main:<module>:22 - Model: groq/llama-3.3-70b-versatile
+2026-06-19 16:13:34 | INFO     | src.main:<module>:23 - Log Level: DEBUG
+2026-06-19 16:13:34 | INFO     | src.main:<module>:24 - Langfuse Enabled: True
+2026-06-19 16:13:34 | INFO     | src.main:<module>:25 - ============================================================
+2026-06-19 16:13:40 | INFO     | src.tools.time:get_time:178 - Successfully retrieved time for London
+2026-06-19 16:13:51 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:29 - Creating Smart City Agent
+2026-06-19 16:13:51 | INFO     | src.agents.smart_city_agent:create_smart_city_agent:51 - Agent created: smart_city_agent with 2 tools
+2026-06-19 16:13:51 | INFO     | src.main:<module>:18 - ============================================================
+2026-06-19 16:13:51 | INFO     | src.main:<module>:19 - Smart City Agent Starting
+2026-06-19 16:13:51 | INFO     | src.main:<module>:20 - ============================================================
+2026-06-19 16:13:51 | INFO     | src.main:<module>:21 - Environment: development
+2026-06-19 16:13:51 | INFO     | src.main:<module>:22 - Model: groq/llama-3.3-70b-versatile
+2026-06-19 16:13:51 | INFO     | src.main:<module>:23 - Log Level: DEBUG
+2026-06-19 16:13:51 | INFO     | src.main:<module>:24 - Langfuse Enabled: True
+2026-06-19 16:13:51 | INFO     | src.main:<module>:25 - ============================================================
