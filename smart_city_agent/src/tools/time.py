@@ -7,8 +7,9 @@ Provides current time information for various cities with timezone support.
 from datetime import datetime
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
-from src.utils.logging import logger
-from src.utils.errors import ValidationError, ToolExecutionError
+from ..utils.logging import logger
+from ..utils.errors import ValidationError, ToolExecutionError
+from ..utils.tracing import observe
 
 
 # TIMEZONE MAPPING
@@ -100,6 +101,7 @@ CITY_TIMEZONES = {
 }
 
 
+@observe(name="get_time")
 def get_time(city: str) -> dict:
     """
     Get current time for a given city.
@@ -113,6 +115,13 @@ def get_time(city: str) -> dict:
     Raises:
         ValidationError: If city parameter is invalid
         ToolExecutionError: If time retrieval fails
+
+    Observability:
+        This function is traced in Langfuse to monitor:
+        - Tool execution time
+        - City lookup success/failure
+        - Timezone conversion errors
+        - Query patterns across cities
 
     Example:
         >>> result = get_time("New York")

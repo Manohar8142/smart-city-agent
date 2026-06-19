@@ -6,10 +6,12 @@ Currently returns hardcoded data (Phase 1).
 Future: Will integrate with OpenWeatherMap API (Phase 2).
 """
 
-from src.utils.logging import logger
-from src.utils.errors import ValidationError, ToolExecutionError
+from ..utils.logging import logger
+from ..utils.errors import ValidationError, ToolExecutionError
+from ..utils.tracing import observe
 
 
+@observe(name="get_weather")
 def get_weather(city: str) -> dict:
     """
     Get weather information for a given city.
@@ -23,6 +25,13 @@ def get_weather(city: str) -> dict:
     Raises:
         ValidationError: If city parameter is invalid
         ToolExecutionError: If weather retrieval fails
+
+    Observability:
+        This function is traced in Langfuse to monitor:
+        - Tool execution time
+        - Input validation errors
+        - Success/failure rates
+        - City query patterns
 
     Example:
         >>> result = get_weather("New York")

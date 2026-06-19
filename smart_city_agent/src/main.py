@@ -9,9 +9,9 @@ This file is discovered by the ADK CLI when running:
 It exports the root_agent that ADK expects.
 """
 
-from src.agents.smart_city_agent import root_agent
-from src.utils.logging import logger
-from src.config.settings import settings
+from .agents.smart_city_agent import root_agent
+from .utils.logging import logger
+from .config.settings import settings
 
 
 # Log startup information

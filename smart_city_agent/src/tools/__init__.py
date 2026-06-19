@@ -4,8 +4,8 @@ Tools package for Smart City Agent.
 This package contains all tool functions that agents can use.
 """
 
-from src.tools.weather import get_weather
-from src.tools.time import (
+from .weather import get_weather
+from .time import (
     get_time,
     list_supported_cities,
     get_cities_by_region,

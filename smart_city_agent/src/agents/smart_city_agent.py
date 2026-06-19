@@ -7,12 +7,14 @@ user queries about cities (weather, time, etc.).
 
 from google.adk.agents import Agent
 
-from src.tools.weather import get_weather
-from src.tools.time import get_time
-from src.config.settings import settings
-from src.utils.logging import logger
+from ..tools.weather import get_weather
+from ..tools.time import get_time
+from ..config.settings import settings
+from ..utils.logging import logger
+from ..utils.tracing import observe
 
 
+@observe(name="create_smart_city_agent")
 def create_smart_city_agent() -> Agent:
     """
     Create and configure the Smart City Agent.
@@ -25,6 +27,12 @@ def create_smart_city_agent() -> Agent:
     - Easier to configure (can pass parameters)
     - Follows dependency injection pattern
     - Can add initialization logic here
+
+    Why @observe decorator?
+    - Traces agent creation in Langfuse
+    - Captures timing, errors, and metadata
+    - Helps debug initialization issues
+    - Provides visibility into agent lifecycle
     """
     logger.info("Creating Smart City Agent")
 
