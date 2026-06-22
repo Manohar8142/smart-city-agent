@@ -41,6 +41,40 @@ class Settings(BaseSettings):
     )
     enable_langfuse: bool = Field(default=False, description="Enable Langfuse Tracing")
 
+    ## ========PHASE 2: API KEYS========
+    openweathermap_api_key: str | None = Field(
+        default=None, description="OpenWeatherMap API Key"
+    )
+    newsdata_api_key: str | None = Field(
+        default=None, description="NewsData.io API Key"
+    )
+    firecrawl_api_key: str | None = Field(default=None, description="Firecrawl API Key")
+    positionstack_api_key: str | None = Field(
+        default=None, description="PositionStack API Key for geocoding"
+    )
+
+    ## ========PHASE 2: RATE LIMITS========
+    weather_rate_limit: int = Field(
+        default=60, description="Weather API calls per minute"
+    )
+    news_rate_limit: int = Field(default=100, description="News API calls per day")
+    firecrawl_rate_limit: int = Field(
+        default=30, description="Firecrawl calls per minute"
+    )
+    location_rate_limit: int = Field(
+        default=300, description="Location API calls per day"
+    )
+
+    ## ========PHASE 2: CACHE TTL (seconds)========
+    cache_ttl_weather: int = Field(default=300, description="Weather cache TTL (5 min)")
+    cache_ttl_news: int = Field(default=900, description="News cache TTL (15 min)")
+    cache_ttl_location: int = Field(
+        default=86400, description="Location cache TTL (24 hrs)"
+    )
+    cache_ttl_firecrawl: int = Field(
+        default=3600, description="Firecrawl cache TTL (1 hr)"
+    )
+
     @field_validator("groq_api_key")
     @classmethod
     def validate_groq_key(cls, v: str) -> str:

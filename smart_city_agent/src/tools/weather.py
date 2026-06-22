@@ -8,10 +8,10 @@ Future: Will integrate with OpenWeatherMap API (Phase 2).
 
 from ..utils.logging import logger
 from ..utils.errors import ValidationError, ToolExecutionError
-from ..utils.tracing import observe
+from ..utils.tracing import observe_sync, trace_context
 
 
-@observe(name="get_weather")
+@observe_sync(name="get_weather", as_type="tool")
 def get_weather(city: str) -> dict:
     """
     Get weather information for a given city.

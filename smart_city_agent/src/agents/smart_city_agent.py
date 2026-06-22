@@ -12,10 +12,10 @@ from ..tools.weather import get_weather
 from ..tools.time import get_time
 from ..config.settings import settings
 from ..utils.logging import logger
-from ..utils.tracing import observe
+from ..utils.tracing import observe_sync
 
 
-@observe(name="create_smart_city_agent")
+@observe_sync(name="create_smart_city_agent", as_type="chain")
 def create_smart_city_agent() -> Agent:
     """
     Create and configure the Smart City Agent.

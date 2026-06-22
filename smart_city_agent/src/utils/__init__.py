@@ -12,7 +12,16 @@ from .errors import (
     ConfigurationError,
     ExternalAPIError,
 )
-from .tracing import observe, langfuse_client, flush_traces
+from .tracing import (
+    observe_sync,
+    observe_async,
+    trace_context,
+    async_trace_context,
+    langfuse_client,
+    langfuse_context,
+    flush_traces,
+    serialize_for_tracing,
+)
 
 __all__ = [
     "logger",
@@ -21,7 +30,12 @@ __all__ = [
     "ValidationError",
     "ConfigurationError",
     "ExternalAPIError",
-    "observe",
+    "observe_sync",
+    "observe_async",
+    "trace_context",
+    "async_trace_context",
     "langfuse_client",
+    "langfuse_context",
     "flush_traces",
+    "serialize_for_tracing",
 ]

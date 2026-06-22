@@ -9,7 +9,7 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from ..utils.logging import logger
 from ..utils.errors import ValidationError, ToolExecutionError
-from ..utils.tracing import observe
+from ..utils.tracing import observe_sync
 
 
 # TIMEZONE MAPPING
@@ -101,7 +101,7 @@ CITY_TIMEZONES = {
 }
 
 
-@observe(name="get_time")
+@observe_sync(name="get_time", as_type="tool")
 def get_time(city: str) -> dict:
     """
     Get current time for a given city.
